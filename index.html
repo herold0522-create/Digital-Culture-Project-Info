@@ -340,7 +340,7 @@ section { padding:100px 48px; }
 
 /* ─── DYNAMIC CSS ANIMATIONS ─── */
 
-/* MOCKUP 01: Login Parallax Scroll */
+/* MOCKUP 01: Login Parallax Scroll with 6 Images */
 .mock-login-wrap {
   width: 100%; height: 100%; position: relative;
   background: linear-gradient(160deg, #fde8d4, #d9cef5);
@@ -569,8 +569,30 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
 <!-- NAV -->
 <nav id="mainNav">
   <a class="nav-logo" href="#hero">
-    <!-- 引入小至的Logo图片 -->
-    <img src="./assets/image_d73ced.png" alt="小至Logo" style="height:36px; width:auto; margin-right:8px; object-fit:contain;">
+    <svg viewBox="0 0 100 100" style="height:36px; width:36px; margin-right:8px;" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 70 45 C 100 40, 110 70, 90 85 C 80 95, 65 90, 68 75 C 70 60, 65 55, 60 60" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 82 52 C 92 60, 92 75, 82 82" fill="#FFF3E0" stroke="none" />
+      <path d="M 35 70 C 35 98, 65 98, 65 70 Z" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 40 75 C 40 92, 60 92, 60 75 Z" fill="#FFF3E0" stroke="none" />
+      <path d="M 28 25 L 22 8 L 40 18" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 72 25 L 78 8 L 60 18" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 15 55 C 10 25, 25 15, 50 15 C 75 15, 90 25, 85 55 C 85 75, 75 80, 50 80 C 25 80, 15 75, 15 55 Z" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 16.5 55 C 16.5 55, 30 45, 50 45 C 70 45, 83.5 55, 83.5 55 C 83.5 73, 75 78.5, 50 78.5 C 25 78.5, 16.5 73, 16.5 55 Z" fill="#FFF3E0" stroke="none" />
+      <path d="M 15 55 C 15 75, 25 80, 50 80 C 75 80, 85 75, 85 55" fill="none" stroke="#1e1b4b" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="33" cy="46" r="9" fill="#1e1b4b" />
+      <circle cx="35" cy="43" r="3" fill="white" />
+      <circle cx="30" cy="49" r="1.5" fill="white" />
+      <circle cx="67" cy="46" r="9" fill="#1e1b4b" />
+      <circle cx="69" cy="43" r="3" fill="white" />
+      <circle cx="64" cy="49" r="1.5" fill="white" />
+      <ellipse cx="23" cy="54" rx="4" ry="2.5" fill="#FFA4A2" opacity="0.9" />
+      <ellipse cx="77" cy="54" rx="4" ry="2.5" fill="#FFA4A2" opacity="0.9" />
+      <circle cx="50" cy="51" r="1.5" fill="#1e1b4b" />
+      <path d="M 44 56 Q 47 60 50 56 Q 53 60 56 56" fill="none" stroke="#1e1b4b" stroke-width="1.5" stroke-linecap="round" />
+      <rect x="48.5" y="58" width="3" height="3" rx="1" fill="white" stroke="#1e1b4b" stroke-width="1" />
+      <ellipse cx="42" cy="78" rx="6" ry="3" fill="#FFC107" stroke="#1e1b4b" stroke-width="2" transform="rotate(45 42 78)" />
+      <ellipse cx="58" cy="78" rx="6" ry="3" fill="#FFC107" stroke="#1e1b4b" stroke-width="2" transform="rotate(-45 58 78)" />
+    </svg>
     数字<span>文化</span>
   </a>
   <ul class="nav-links">
@@ -711,9 +733,12 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
           <div class="ipad-screen-wrap">
             <div class="mock-login-wrap">
               <div class="mock-login-collage-dynamic">
-                <div class="m-img" style="top:8%; left:6%; width:38%; height:32%;"><img src="https://images.unsplash.com/photo-1702054853074-260ebd0aa9ea?w=300&q=80" alt=""></div>
-                <div class="m-img" style="top:48%; right:6%; width:42%; height:35%;"><img src="https://images.unsplash.com/photo-1541844053589-346841d0b34c?w=300&q=80" alt=""></div>
-                <div class="m-img" style="top:12%; right:10%; width:32%; height:26%;"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=300&q=80" alt=""></div>
+                <div class="m-img" style="top:6%; left:4%; width:28%; height:28%;"><img src="https://images.unsplash.com/photo-1702054853074-260ebd0aa9ea?w=300&q=80" alt=""></div>
+                <div class="m-img" style="top:8%; right:5%; width:26%; height:25%;"><img src="https://images.unsplash.com/photo-1541844053589-346841d0b34c?w=300&q=80" alt=""></div>
+                <div class="m-img" style="bottom:8%; left:8%; width:25%; height:30%;"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=300&q=80" alt=""></div>
+                <div class="m-img" style="bottom:5%; right:6%; width:30%; height:28%;"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=300&q=80" alt=""></div>
+                <div class="m-img" style="top:40%; left:-5%; width:22%; height:24%;"><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=300&q=80" alt=""></div>
+                <div class="m-img" style="top:45%; right:-2%; width:24%; height:26%;"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=300&q=80" alt=""></div>
               </div>
               <div class="mock-login-center-card">
                 <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:#1a1025;margin-bottom:4px;">同频<span style="color:#a88de0;">.</span></div>
@@ -954,7 +979,30 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo" style="display:flex; align-items:center;">
-    <img src="./assets/image_d73ced.png" alt="小至Logo" style="height:24px; margin-right:8px; object-fit:contain;">
+    <svg viewBox="0 0 100 100" style="height:24px; width:24px; margin-right:8px;" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 70 45 C 100 40, 110 70, 90 85 C 80 95, 65 90, 68 75 C 70 60, 65 55, 60 60" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 82 52 C 92 60, 92 75, 82 82" fill="#FFF3E0" stroke="none" />
+      <path d="M 35 70 C 35 98, 65 98, 65 70 Z" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 40 75 C 40 92, 60 92, 60 75 Z" fill="#FFF3E0" stroke="none" />
+      <path d="M 28 25 L 22 8 L 40 18" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 72 25 L 78 8 L 60 18" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 15 55 C 10 25, 25 15, 50 15 C 75 15, 90 25, 85 55 C 85 75, 75 80, 50 80 C 25 80, 15 75, 15 55 Z" fill="#FFC107" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M 16.5 55 C 16.5 55, 30 45, 50 45 C 70 45, 83.5 55, 83.5 55 C 83.5 73, 75 78.5, 50 78.5 C 25 78.5, 16.5 73, 16.5 55 Z" fill="#FFF3E0" stroke="none" />
+      <path d="M 15 55 C 15 75, 25 80, 50 80 C 75 80, 85 75, 85 55" fill="none" stroke="#1e1b4b" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="33" cy="46" r="9" fill="#1e1b4b" />
+      <circle cx="35" cy="43" r="3" fill="white" />
+      <circle cx="30" cy="49" r="1.5" fill="white" />
+      <circle cx="67" cy="46" r="9" fill="#1e1b4b" />
+      <circle cx="69" cy="43" r="3" fill="white" />
+      <circle cx="64" cy="49" r="1.5" fill="white" />
+      <ellipse cx="23" cy="54" rx="4" ry="2.5" fill="#FFA4A2" opacity="0.9" />
+      <ellipse cx="77" cy="54" rx="4" ry="2.5" fill="#FFA4A2" opacity="0.9" />
+      <circle cx="50" cy="51" r="1.5" fill="#1e1b4b" />
+      <path d="M 44 56 Q 47 60 50 56 Q 53 60 56 56" fill="none" stroke="#1e1b4b" stroke-width="1.5" stroke-linecap="round" />
+      <rect x="48.5" y="58" width="3" height="3" rx="1" fill="white" stroke="#1e1b4b" stroke-width="1" />
+      <ellipse cx="42" cy="78" rx="6" ry="3" fill="#FFC107" stroke="#1e1b4b" stroke-width="2" transform="rotate(45 42 78)" />
+      <ellipse cx="58" cy="78" rx="6" ry="3" fill="#FFC107" stroke="#1e1b4b" stroke-width="2" transform="rotate(-45 58 78)" />
+    </svg>
     数字<span>文化</span>
   </div>
   <ul class="footer-links">
