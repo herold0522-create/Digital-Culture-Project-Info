@@ -52,7 +52,7 @@ nav {
   font-family:'Noto Serif SC',serif;
   font-size:20px; font-weight:700; color:var(--text-dark);
   letter-spacing:.05em; text-decoration:none;
-  display: flex; align-items: center; /* 使Logo和文字垂直居中 */
+  display: flex; align-items: center;
 }
 .nav-logo span { color:var(--coral); }
 .nav-links { display:flex; gap:32px; list-style:none; }
@@ -290,7 +290,6 @@ section { padding:100px 48px; }
 /* ─── PAGES SECTION (Enlarged & Locked to 16:9) ─── */
 .pages-section { background:var(--cream2); }
 
-/* 调整布局比例，让设备框占据更多空间 */
 .pages-grid {
   display:grid; grid-template-columns:1.3fr 0.7fr;
   gap:64px; align-items:center; margin-bottom:120px;
@@ -300,7 +299,6 @@ section { padding:100px 48px; }
 
 .page-visual { position:relative; display:flex; justify-content:center; width: 100%; }
 
-/* 放大设备外框 */
 .ipad-shell {
   position:relative;
   width:100%;
@@ -321,7 +319,6 @@ section { padding:100px 48px; }
 .ipad-camera { width:8px; height:8px; border-radius:50%; background:#1a1025; border:1.5px solid rgba(255,255,255,0.15); }
 .ipad-speaker { width:40px; height:4px; border-radius:4px; background:rgba(26,16,37,.25); }
 
-/* 强制锁定内屏比例为 16:9 确保截图完整展示 */
 .ipad-screen-wrap {
   background:#0d0d12; border-radius:12px;
   overflow:hidden; position:relative;
@@ -602,7 +599,8 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
     <li><a href="#activities">活动</a></li>
     <li><a href="#ai">AI助手</a></li>
   </ul>
-  <a class="nav-cta" href="#cta">进入空间 →</a>
+  <!-- ✅ 顶部导航「进入空间」按钮 — 跳转至项目主站 -->
+  <a class="nav-cta" href="https://herold0522-create.github.io/Digital-Culture-Final-Project/" target="_blank" rel="noopener noreferrer">进入空间 →</a>
 </nav>
 
 <!-- HERO -->
@@ -702,15 +700,15 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
     <div class="circles-grid">
       <div class="circle-card reveal d1">
         <div class="circle-cover"><img src="https://images.unsplash.com/photo-1702054853074-260ebd0aa9ea?w=700&q=60" alt="书法国风社"><div class="circle-cover-overlay"></div><div class="circle-cover-badge"><span class="live-dot"></span>1,560 成员</div><div class="circle-cover-name">书法国风社</div></div>
-        <div class="circle-body"><div class="circle-tags"><span class="circle-tag">碑帖研习</span><span class="circle-tag">形制考究</span></div><p class="circle-desc">专注传统书法研习、汉服形制考究与国风美学的聚集地。墨香，在此氤氲。</p><div class="circle-footer"><div class="circle-members">⚡ <span>硬核考核</span>准入</div><a class="circle-join" href="#cta">申请加入 →</a></div></div>
+        <div class="circle-body"><div class="circle-tags"><span class="circle-tag">碑帖研习</span><span class="circle-tag">形制考究</span></div><p class="circle-desc">专注传统书法研习、汉服形制考究与国风美学的聚集地。墨香，在此氤氲。</p><div class="circle-footer"><div class="circle-members">⚡ <span>硬核考核</span>准入</div><a class="circle-join" href="https://herold0522-create.github.io/Digital-Culture-Final-Project/" target="_blank" rel="noopener noreferrer">申请加入 →</a></div></div>
       </div>
       <div class="circle-card reveal d2">
         <div class="circle-cover"><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&q=60" alt="动漫研习社"><div class="circle-cover-overlay"></div><div class="circle-cover-badge"><span class="live-dot"></span>2,450 成员</div><div class="circle-cover-name">动漫研习社</div></div>
-        <div class="circle-body"><div class="circle-tags"><span class="circle-tag">同人创作</span><span class="circle-tag">剧情解构</span></div><p class="circle-desc">纯粹的二次元同好交流地。从新番安利到同人创作，守护你的精神结界。</p><div class="circle-footer"><div class="circle-members">⚡ <span>硬核考核</span>准入</div><a class="circle-join" href="#cta">申请加入 →</a></div></div>
+        <div class="circle-body"><div class="circle-tags"><span class="circle-tag">同人创作</span><span class="circle-tag">剧情解构</span></div><p class="circle-desc">纯粹的二次元同好交流地。从新番安利到同人创作，守护你的精神结界。</p><div class="circle-footer"><div class="circle-members">⚡ <span>硬核考核</span>准入</div><a class="circle-join" href="https://herold0522-create.github.io/Digital-Culture-Final-Project/" target="_blank" rel="noopener noreferrer">申请加入 →</a></div></div>
       </div>
       <div class="circle-card reveal d3">
         <div class="circle-cover"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=700&q=60" alt="街舞交流圈"><div class="circle-cover-overlay"></div><div class="circle-cover-badge"><span class="live-dot"></span>3,420 成员</div><div class="circle-cover-name">街舞交流圈</div></div>
-        <div class="circle-body"><div class="circle-tags"><span class="circle-tag">招式拆解</span><span class="circle-tag">赛事Repo</span></div><p class="circle-desc">舞者的专属阵地。用身体丈量热爱，用汗水诠释态度。节奏，重塑灵魂。</p><div class="circle-footer"><div class="circle-members">⚡ <span>硬核考核</span>准入</div><a class="circle-join" href="#cta">申请加入 →</a></div></div>
+        <div class="circle-body"><div class="circle-tags"><span class="circle-tag">招式拆解</span><span class="circle-tag">赛事Repo</span></div><p class="circle-desc">舞者的专属阵地。用身体丈量热爱，用汗水诠释态度。节奏，重塑灵魂。</p><div class="circle-footer"><div class="circle-members">⚡ <span>硬核考核</span>准入</div><a class="circle-join" href="https://herold0522-create.github.io/Digital-Culture-Final-Project/" target="_blank" rel="noopener noreferrer">申请加入 →</a></div></div>
       </div>
     </div>
   </div>
@@ -725,7 +723,7 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       <p class="section-desc" style="margin:0 auto;">从登录到探索，每一个交互节点都经过深思熟虑。以宽大的外框视觉呈现 1920×1080 规格网页端的完整美学。</p>
     </div>
 
-    <!-- 01 登录页 (CSS Dynamic with 6 images) -->
+    <!-- 01 登录页 -->
     <div class="pages-grid reveal">
       <div class="page-visual">
         <div class="ipad-shell">
@@ -758,7 +756,7 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       </div>
     </div>
 
-    <!-- 02 首页 (GitHub Static) -->
+    <!-- 02 首页 -->
     <div class="pages-grid reverse reveal">
       <div class="page-visual">
         <div class="ipad-shell">
@@ -779,7 +777,7 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       </div>
     </div>
 
-    <!-- 03 发现 (CSS Dynamic) -->
+    <!-- 03 发现 -->
     <div class="pages-grid reveal">
       <div class="page-visual">
         <div class="ipad-shell">
@@ -818,7 +816,7 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       </div>
     </div>
 
-    <!-- 04 圈层 (GitHub Static) -->
+    <!-- 04 圈层 -->
     <div class="pages-grid reverse reveal">
       <div class="page-visual">
         <div class="ipad-shell">
@@ -839,7 +837,7 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       </div>
     </div>
 
-    <!-- 05 杂志排版 (GitHub Static) -->
+    <!-- 05 杂志排版 -->
     <div class="pages-grid reveal">
       <div class="page-visual">
         <div class="ipad-shell">
@@ -860,7 +858,7 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       </div>
     </div>
 
-    <!-- 06 活动详情 (GitHub Static) -->
+    <!-- 06 活动详情 -->
     <div class="pages-grid reverse reveal">
       <div class="page-visual">
         <div class="ipad-shell">
@@ -938,13 +936,12 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
   </div>
 </section>
 
-<!-- MASCOT IP (NEW) -->
+<!-- MASCOT IP -->
 <section class="ip-section" id="mascot">
   <div class="container ip-container">
     <div class="ip-visual reveal">
       <div class="ip-blob"></div>
       <div class="ip-box">
-        <!-- 引入小至的实拍图片 -->
         <img src="./assets/d116676767e39ecd0465ce30e29f4779.jpg" alt="松鼠小至 实拍图">
       </div>
       <div class="page-badge bottom-left"><span>🐿️</span>至诚专属向导</div>
@@ -970,7 +967,8 @@ footer { background:var(--text-dark); border-top:1px solid rgba(255,255,255,0.06
       <h2 class="cta-title">找到你的<br><span class="ghost-text">精神</span><br>角落</h2>
       <p class="cta-sub">立即进入网页端，开启一段关于热爱与共鸣的高阶旅程。</p>
       <div class="hero-ctas">
-        <a class="btn-primary" href="#">立即进入空间 ✦</a>
+        <!-- ✅ 底部 CTA「立即进入空间」按钮 — 跳转至项目主站 -->
+        <a class="btn-primary" href="https://herold0522-create.github.io/Digital-Culture-Final-Project/" target="_blank" rel="noopener noreferrer">立即进入空间 ✦</a>
       </div>
     </div>
   </div>
